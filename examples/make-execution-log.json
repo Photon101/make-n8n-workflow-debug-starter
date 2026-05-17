@@ -1,0 +1,36 @@
+{
+  "id": "make_run_demo_001",
+  "modules": [
+    {
+      "name": "Help Scout webhook",
+      "durationMs": 42,
+      "response": {
+        "status": 200
+      }
+    },
+    {
+      "name": "OpenAI classifier",
+      "durationMs": 810,
+      "request": {
+        "model": "gpt-4.1-mini",
+        "authorization": "Bearer test"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "category": "quote_request"
+        }
+      }
+    },
+    {
+      "name": "Google Sheets lookup",
+      "durationMs": 6100,
+      "response": {
+        "status": 400,
+        "body": {
+          "error": "Required field sku is missing"
+        }
+      }
+    }
+  ]
+}

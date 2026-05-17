@@ -1,0 +1,19 @@
+{
+  "platform": "n8n",
+  "method": "post",
+  "path": "/webhook/help-scout-draft",
+  "headers": {
+    "content-type": "application/json",
+    "authorization": "Bearer demo-token",
+    "x-request-id": "evt_demo_001"
+  },
+  "body": {
+    "mailbox": "support",
+    "conversation": {
+      "id": "conv_42",
+      "customerEmail": "customer@example.com",
+      "subject": "Need a quote"
+    },
+    "api_key": "demo-secret"
+  }
+}
